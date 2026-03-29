@@ -6,7 +6,9 @@ interface ProjectWireframesProps {
 }
 
 export function ProjectWireframes({ project }: ProjectWireframesProps) {
-  if (project.wireframes.length === 0) return null
+  if (!project.wireframes || project.wireframes.length === 0) return null
+
+  const isMobileApp = project.category.toLowerCase().includes("mobile") || project.category.toLowerCase().includes("aplicativo")
 
   return (
     <section className="py-24 md:py-32 px-6 bg-muted/50">
@@ -20,17 +22,17 @@ export function ProjectWireframes({ project }: ProjectWireframesProps) {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+        <div className={isMobileApp ? "grid grid-cols-2 md:grid-cols-4 gap-8" : "grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16"}>
           {project.wireframes.map((wireframe, index) => (
             <div 
               key={index} 
-              className="relative aspect-[4/3] bg-muted overflow-hidden shadow-sm"
+              className={`relative overflow-hidden bg-white shadow-sm border border-border ${isMobileApp ? "aspect-[9/19] rounded-[2rem]" : "aspect-[4/3] rounded-lg"}`}
             >
               <Image
                 src={wireframe}
                 alt={`Wireframe ${index + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain p-2"
               />
             </div>
           ))}

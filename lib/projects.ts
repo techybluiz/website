@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "ArchiPlace",
     subtitle: "Landing page para imobiliária e arquitetura",
     category: "Landing Page",
-    thumbnail: "/tela_home.png",
+    thumbnail: "/ArchiPlace/home_archiPlace.png",
     overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
     problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
     context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
@@ -68,11 +68,13 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+      "/ArchiPlace/wireframe_baixo.png"
     ],
     finalDesigns: [
-      "/tela_home.png"
+      "/ArchiPlace/MacBook Air (2022).png",
+      "/ArchiPlace/spaces_archiplace.png",
+      "/ArchiPlace/Team_archiPlace.png",
+      "/ArchiPlace/Group 3.png"
     ],
     decisions: [
       {
@@ -102,7 +104,7 @@ export const projects: Project[] = [
     title: "Volare",
     subtitle: "Plataforma de viagens",
     category: "E-commerce",
-    thumbnail: "/capa.webp",
+    thumbnail: "/volare/capa.webp",
     overview: "A Volare é um conceito de plataforma digital para busca e compra de passagens aéreas, focada em praticidade, clareza e experiência do usuário.",
     problem: "O site existente tinha uma taxa de conversão baixa (1.2%) e os usuários relatavam dificuldade em encontrar produtos e entender a proposta de sustentabilidade da marca.",
     context: "Projeto realizado em parceria com a equipe de marketing da ModaViva ao longo de 12 semanas. O objetivo principal era aumentar a taxa de conversão e melhorar a percepção da marca como referência em moda sustentável.",
@@ -137,11 +139,10 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/wireframe_volare.png"
+      "/volare/wireframe_volare.png"
     ],
     finalDesigns: [
-      "/mockup_volare.webp",
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&h=600&fit=crop"
+      "/volare/mockup_volare.webp"
     ],
     decisions: [
       {
@@ -162,8 +163,8 @@ export const projects: Project[] = [
     id: "newsflow",
     title: "NewsFlow",
     subtitle: "Agregador de notícias inteligente",
-    category: "Web App",
-    thumbnail: "/home.png",
+    category: "Mobile App",
+    thumbnail: "/newsflow/homepage.png",
     overview: "NewsFlow é uma plataforma que centraliza notícias de diversas fontes e utiliza IA para filtrar conteúdo irrelevante, entregando apenas o que importa para o usuário.",
     problem: "O excesso de informação e a disseminação de fake news dificultam o acompanhamento de notícias relevantes e confiáveis no dia a dia.",
     context: "Desenvolvido como um projeto pessoal para explorar integração de APIs de notícias e algoritmos de recomendação, com foco em uma interface limpa e focada na leitura.",
@@ -196,11 +197,18 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?w=800&h=600&fit=crop"
+      "/newsflow/login.png",
+      "/newsflow/register.png"
     ],
     finalDesigns: [
-      "/home.png",
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop"
+      "/newsflow/onboarding1.png",
+      "/newsflow/onboarding2.png",
+      "/newsflow/onboarding3.png",
+      "/newsflow/onboarding4.png",
+      "/newsflow/comunity.png",
+      "/newsflow/chat_comunity.png",
+      "/newsflow/profile_settings.png",
+      "/newsflow/itens_save.png"
     ],
     decisions: [
       {
@@ -218,7 +226,7 @@ export const projects: Project[] = [
     title: "Starbucks App",
     subtitle: "Experiência de pedido e fidelidade",
     category: "Mobile App",
-    thumbnail: "/capa_star.png",
+    thumbnail: "/Starbucks/capa_star.png",
     overview: "Redesign conceitual do aplicativo Starbucks, focando em simplificar o processo de customização de bebidas e integrar o programa de fidelidade de forma mais fluida.",
     problem: "O processo de customização atual é complexo e muitas vezes resulta em erros no pedido final.",
     context: "Projeto de 6 semanas focado em micro-interações e design emocional para reforçar a identidade da marca no ambiente digital.",
@@ -251,12 +259,14 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/login_starbucks.png"
+      "/Starbucks/login_starbucks.png"
     ],
     finalDesigns: [
-      "/mockup_star1.png",
-      "/mockup_star2.png",
-      "/mockup_star3.png"
+      "/Starbucks/mockup_star1.png",
+      "/Starbucks/mockup_star2.png",
+      "/Starbucks/mockup_star3.png",
+      "/Starbucks/home.png",
+      "/Starbucks/drinks.png"
     ],
     decisions: [
       {
@@ -273,8 +283,8 @@ export const projects: Project[] = [
     id: "woofle",
     title: "Woofle",
     subtitle: "Plataforma para donos de pets",
-    category: "Mobile App",
-    thumbnail: "/87fa987315d8690e819d048f8b964dcc.webp",
+    category: "Web Platform",
+    thumbnail: "/Woofle/Desktop - 1 (3).png",
     overview: "Woofle conecta donos de animais de estimação a serviços locais como pet shops, veterinários e dog walkers, além de oferecer uma rede social para a comunidade pet.",
     problem: "Donos de pets gastam muito tempo procurando serviços confiáveis e gerindo a agenda de saúde de seus animais em diferentes lugares.",
     context: "Criado para unificar a experiência de cuidado animal, facilitando o agendamento e o compartilhamento de experiências entre tutores.",
@@ -307,11 +317,11 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&h=600&fit=crop"
+      "/Woofle/Group 9.png"
     ],
     finalDesigns: [
-      "/87fa987315d8690e819d048f8b964dcc.webp",
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=600&fit=crop"
+      "/Woofle/Group 7.png",
+      "/Woofle/Frame 2.png"
     ],
     decisions: [
       {

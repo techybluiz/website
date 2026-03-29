@@ -8,6 +8,9 @@ interface ProjectHeaderProps {
 }
 
 export function ProjectHeader({ project }: ProjectHeaderProps) {
+  const isMobileApp = project.category.toLowerCase().includes("mobile") || project.category.toLowerCase().includes("aplicativo")
+  const isWebProject = project.category.toLowerCase().includes("landing page") || project.category.toLowerCase().includes("web") || project.category.toLowerCase().includes("e-commerce")
+
   return (
     <header className="relative w-full">
       {/* Navigation */}
@@ -51,27 +54,41 @@ export function ProjectHeader({ project }: ProjectHeaderProps) {
         {/* Hero Image Container */}
         <div className="px-6 md:px-10 pb-20">
           <div className="max-w-7xl mx-auto">
-            <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden rounded-xl border border-border shadow-2xl bg-muted">
-              {/* Browser-like top bar for web projects */}
-              {project.category.toLowerCase().includes("landing page") || project.category.toLowerCase().includes("web") ? (
-                <div className="absolute top-0 left-0 right-0 h-10 bg-muted-foreground/5 border-b border-border z-10 flex items-center px-4 gap-1.5 backdrop-blur-sm">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-400/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-amber-400/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-400/50" />
+            {isMobileApp ? (
+              <div className="flex justify-center py-12 bg-muted/30 rounded-3xl">
+                <div className="relative w-[280px] h-[580px] md:w-[320px] md:h-[660px] rounded-[3rem] border-[12px] border-foreground overflow-hidden shadow-2xl bg-muted">
+                   <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
-              ) : null}
-              
-              <div className="relative w-full h-full pt-10">
-                <Image
-                  src={project.thumbnail}
-                  alt={project.title}
-                  fill
-                  className="object-cover object-top transition-transform duration-1000 hover:scale-105"
-                  priority
-                />
               </div>
-              <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-xl pointer-events-none" />
-            </div>
+            ) : (
+              <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden rounded-xl border border-border shadow-2xl bg-muted">
+                {/* Browser-like top bar for web projects */}
+                {isWebProject ? (
+                  <div className="absolute top-0 left-0 right-0 h-10 bg-muted-foreground/5 border-b border-border z-10 flex items-center px-4 gap-1.5 backdrop-blur-sm">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-400/50" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-amber-400/50" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-400/50" />
+                  </div>
+                ) : null}
+                
+                <div className={`relative w-full h-full ${isWebProject ? 'pt-10' : ''}`}>
+                  <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover object-top transition-transform duration-1000 hover:scale-105"
+                    priority
+                  />
+                </div>
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-xl pointer-events-none" />
+              </div>
+            )}
           </div>
         </div>
       </div>
