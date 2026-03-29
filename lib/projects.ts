@@ -29,70 +29,76 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "fintech-app",
-    title: "FinTrack",
-    subtitle: "App de gestão financeira pessoal",
-    category: "Mobile App",
+    id: "archiplace",
+    title: "ArchiPlace",
+    subtitle: "Landing page para imobiliária e arquitetura",
+    category: "Landing Page",
     thumbnail: "/tela_home.png",
-    overview: "FinTrack é um aplicativo móvel que ajuda pessoas a gerenciar suas finanças pessoais de forma simples e intuitiva. O projeto foi desenvolvido com foco em usuários que têm dificuldade em acompanhar seus gastos e criar hábitos financeiros saudáveis.",
-    problem: "Muitas pessoas têm dificuldade em acompanhar seus gastos diários e acabam perdendo o controle financeiro. Os apps existentes no mercado são complexos demais ou não oferecem insights acionáveis para melhorar os hábitos financeiros.",
-    context: "O projeto foi desenvolvido em 8 semanas, partindo de uma pesquisa inicial com 25 usuários potenciais até a entrega de um protótipo de alta fidelidade validado. O foco foi criar uma experiência que fosse acessível tanto para iniciantes quanto para usuários mais experientes em finanças.",
+    overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
+    problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
+    context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
     persona: {
-      name: "Marina Silva",
-      age: 28,
-      occupation: "Analista de Marketing",
+      name: "Marina Costa",
+      age: 32,
+      occupation: "Arquiteta",
       goals: [
-        "Economizar para uma viagem internacional",
-        "Ter controle dos gastos mensais",
-        "Criar uma reserva de emergência"
+        "Encontrar imóveis de forma prática e visual",
+        "Explorar diferentes estilos de arquitetura e interiores",
+        "Ter uma experiência digital elegante e confiável"
       ],
       painPoints: [
-        "Esquece de anotar pequenos gastos",
-        "Não consegue visualizar para onde vai seu dinheiro",
-        "Sente-se sobrecarregada com planilhas complexas"
+        "Muitos sites imobiliários são poluídos visualmente",
+        "Falta organização entre infrairação e informação objetiva",
+        "Interfaces genéricas reduzem a confiança na marca"
       ],
-      quote: "Eu quero algo que me mostre de forma clara e rápida se estou gastando demais, sem precisar fazer cálculos."
+      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
     },
     research: {
       methods: [
-        "Entrevistas em profundidade com 15 usuários",
-        "Análise competitiva de 8 apps similares",
-        "Teste de usabilidade com 10 participantes",
-        "Análise de dados de uso de apps financeiros"
+        "Benchmark de landing pages imobiliárias e de arquitetura",
+        "Análise de referências visuais com proposta premium",
+        "Estudo de hierarquia visual para páginas longas",
+        "Exploração de padrões de cards para exibição de imóveis"
       ],
       insights: [
-        "78% dos usuários abandonam apps financeiros no primeiro mês por complexidade",
-        "Notificações personalizadas aumentam o engajamento em 45%",
-        "Visualizações gráficas são preferidas por 89% dos entrevistados",
-        "A gamificação de metas aumenta a aderência em 60%"
+        "Usuários valorizam imagens de destaque logo no primeiro contato com a página",
+        "Prova social e números institucionais ajudam a transmitir credibilidade",
+        "Cards com imagem, localização e preço facilitam a escaneabilidade",
+        "Seções inspiracionais ajudam a tornar a experiência mais aspiracional e memorável"
       ]
     },
     wireframes: [
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
     ],
     finalDesigns: [
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+      "/tela_home.png"
     ],
     decisions: [
       {
-        title: "Paleta de cores calmas",
-        description: "Optamos por tons de azul e verde para transmitir confiança e tranquilidade, evitando cores que pudessem causar ansiedade ao lidar com dinheiro."
+        title: "Hero com foco em impacto visual",
+        description: "A primeira dobra foi construída para combinar uma mensagem clara com uma imagem de alto impacto, criando uma entrada forte e aspiracional para a experiência."
       },
       {
-        title: "Onboarding progressivo",
-        description: "Implementamos um onboarding que revela funcionalidades gradualmente, evitando sobrecarregar novos usuários com todas as opções de uma vez."
+        title: "Cards modulares para imóveis",
+        description: "Os imóveis foram organizados em cards que combinam imagem, nome, localização, descrição e preço, facilitando a leitura rápida e mantendo consistência visual."
       },
       {
-        title: "Dashboard simplificado",
-        description: "A tela inicial mostra apenas as 3 informações mais importantes: saldo, gastos do mês e progresso das metas, com acesso fácil a detalhes."
+        title: "Seção inspiracional de estilos",
+        description: "Além de apresentar propriedades, foi criada uma seção com estilos de espaços para ampliar o apelo emocional da interface e reforçar o posicionamento da marca."
+      },
+      {
+        title: "Equipe para reforço de credibilidade",
+        description: "A apresentação dos profissionais foi incluída para humanizar a marca e transmitir confiança ao usuário."
+      },
+      {
+        title: "Paleta neutra com contraste premium",
+        description: "A escolha de tons claros, preto e um bloco de destaque suave no hero ajudou a construir uma estética elegante, limpa e contemporânea."
       }
     ]
   },
   {
-    id: "ecommerce-redesign",
+    id: "volare",
     title: "Volare",
     subtitle: "Plataforma de viagens",
     category: "E-commerce",
@@ -131,13 +137,11 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/wireframe_volare.png",
-      "https://images.unsplash.com/photo-1586953208270-767889fa9b0e?w=800&h=600&fit=crop"
+      "/wireframe_volare.png"
     ],
     finalDesigns: [
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&h=600&fit=crop",
       "/mockup_volare.webp",
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&h=600&fit=crop"
     ],
     decisions: [
       {
@@ -155,286 +159,215 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "health-dashboard",
-    title: "ArchiPlace",
-    subtitle: "Landing page para imobiliária e arquitetura",
-    category: "Landing Page",
-    thumbnail: "/tela_home.png",
-    overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
-    problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
-    context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
+    id: "newsflow",
+    title: "NewsFlow",
+    subtitle: "Agregador de notícias inteligente",
+    category: "Web App",
+    thumbnail: "/home.png",
+    overview: "NewsFlow é uma plataforma que centraliza notícias de diversas fontes e utiliza IA para filtrar conteúdo irrelevante, entregando apenas o que importa para o usuário.",
+    problem: "O excesso de informação e a disseminação de fake news dificultam o acompanhamento de notícias relevantes e confiáveis no dia a dia.",
+    context: "Desenvolvido como um projeto pessoal para explorar integração de APIs de notícias e algoritmos de recomendação, com foco em uma interface limpa e focada na leitura.",
     persona: {
-      name: "Marina Costa",
-      age: 32,
-      occupation: "Arquiteta",
+      name: "Ricardo Oliveira",
+      age: 45,
+      occupation: "Jornalista",
       goals: [
-        "Encontrar imóveis de forma prática e visual",
-        "Explorar diferentes estilos de arquitetura e interiores",
-        "Ter uma experiência digital elegante e confiável"
+        "Acompanhar tendências em tempo real",
+        "Filtrar ruído de redes sociais",
+        "Ter uma fonte centralizada e confiável"
       ],
       painPoints: [
-        "Muitos sites imobiliários são poluídos visualmente",
-        "Falta organização entre inspiração e informação objetiva",
-        "Interfaces genéricas reduzem a confiança na marca"
+        "Muitos anúncios intrusivos em sites de notícias",
+        "Dificuldade em encontrar opiniões divergentes",
+        "Falta de tempo para ler artigos longos"
       ],
-      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
+      quote: "Eu preciso de fatos, não de clickbait."
     },
     research: {
       methods: [
-        "Benchmark de landing pages imobiliárias e de arquitetura",
-        "Análise de referências visuais com proposta premium",
-        "Estudo de hierarquia visual para páginas longas",
-        "Exploração de padrões de cards para exibição de imóveis"
+        "Questionário online com 100 leitores",
+        "Análise de padrões de leitura em dispositivos móveis",
+        "Estudo de legibilidade e tipografia"
       ],
       insights: [
-        "Usuários valorizam imagens de destaque logo no primeiro contato com a página",
-        "Prova social e números institucionais ajudam a transmitir credibilidade",
-        "Cards com imagem, localização e preço facilitam a escaneabilidade",
-        "Seções inspiracionais ajudam a tornar a experiência mais aspiracional e memorável"
+        "Modo escuro é preferido por 70% dos leitores noturnos",
+        "Sumários gerados por IA aumentam a retenção de informação",
+        "A possibilidade de salvar para ler depois é essencial"
       ]
     },
     wireframes: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?w=800&h=600&fit=crop"
     ],
     finalDesigns: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&h=600&fit=crop"
+      "/home.png",
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop"
     ],
     decisions: [
       {
-        title: "Hero com foco em impacto visual",
-        description: "A primeira dobra foi construída para combinar uma mensagem clara com uma imagem de alto impacto, criando uma entrada forte e aspiracional para a experiência."
+        title: "Foco na tipografia",
+        description: "Escolhemos fontes serifadas para o corpo do texto para facilitar a leitura prolongada, semelhante a jornais impressos."
       },
       {
-        title: "Cards modulares para imóveis",
-        description: "Os imóveis foram organizados em cards que combinam imagem, nome, localização, descrição e preço, facilitando a leitura rápida e mantendo consistência visual."
-      },
-      {
-        title: "Seção inspiracional de estilos",
-        description: "Além de apresentar propriedades, foi criada uma seção com estilos de espaços para ampliar o apelo emocional da interface e reforçar o posicionamento da marca."
-      },
-            {
-        title: "Equipe para reforço de credibilidade",
-        description: "A apresentação dos profissionais foi incluída para humanizar a marca e transmitir confiança ao usuário."
-      },
-            {
-        title: "Paleta neutra com contraste premium",
-        description: "A escolha de tons claros, preto e um bloco de destaque suave no hero ajudou a construir uma estética elegante, limpa e contemporânea."
+        title: "Sistema de etiquetas dinâmicas",
+        description: "Implementamos um sistema de tags que agrupa notícias por contexto, não apenas por categorias genéricas."
       }
     ]
   },
   {
-    id: "health-dashboard",
-    title: "ArchiPlace",
-    subtitle: "Landing page para imobiliária e arquitetura",
-    category: "Landing Page",
-    thumbnail: "/tela_home.png",
-    overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
-    problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
-    context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
-    persona: {
-      name: "Marina Costa",
-      age: 32,
-      occupation: "Arquiteta",
-      goals: [
-        "Encontrar imóveis de forma prática e visual",
-        "Explorar diferentes estilos de arquitetura e interiores",
-        "Ter uma experiência digital elegante e confiável"
-      ],
-      painPoints: [
-        "Muitos sites imobiliários são poluídos visualmente",
-        "Falta organização entre inspiração e informação objetiva",
-        "Interfaces genéricas reduzem a confiança na marca"
-      ],
-      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
-    },
-    research: {
-      methods: [
-        "Benchmark de landing pages imobiliárias e de arquitetura",
-        "Análise de referências visuais com proposta premium",
-        "Estudo de hierarquia visual para páginas longas",
-        "Exploração de padrões de cards para exibição de imóveis"
-      ],
-      insights: [
-        "Usuários valorizam imagens de destaque logo no primeiro contato com a página",
-        "Prova social e números institucionais ajudam a transmitir credibilidade",
-        "Cards com imagem, localização e preço facilitam a escaneabilidade",
-        "Seções inspiracionais ajudam a tornar a experiência mais aspiracional e memorável"
-      ]
-    },
-    wireframes: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-    ],
-    finalDesigns: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&h=600&fit=crop"
-    ],
-    decisions: [
-      {
-        title: "Hero com foco em impacto visual",
-        description: "A primeira dobra foi construída para combinar uma mensagem clara com uma imagem de alto impacto, criando uma entrada forte e aspiracional para a experiência."
-      },
-      {
-        title: "Cards modulares para imóveis",
-        description: "Os imóveis foram organizados em cards que combinam imagem, nome, localização, descrição e preço, facilitando a leitura rápida e mantendo consistência visual."
-      },
-      {
-        title: "Seção inspiracional de estilos",
-        description: "Além de apresentar propriedades, foi criada uma seção com estilos de espaços para ampliar o apelo emocional da interface e reforçar o posicionamento da marca."
-      },
-            {
-        title: "Equipe para reforço de credibilidade",
-        description: "A apresentação dos profissionais foi incluída para humanizar a marca e transmitir confiança ao usuário."
-      },
-            {
-        title: "Paleta neutra com contraste premium",
-        description: "A escolha de tons claros, preto e um bloco de destaque suave no hero ajudou a construir uma estética elegante, limpa e contemporânea."
-      }
-    ]
-  },
-  {
-    id: "health-dashboard",
-    title: "ArchiPlace",
-    subtitle: "Landing page para imobiliária e arquitetura",
-    category: "Landing Page",
-    thumbnail: "/tela_home.png",
-    overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
-    problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
-    context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
-    persona: {
-      name: "Marina Costa",
-      age: 32,
-      occupation: "Arquiteta",
-      goals: [
-        "Encontrar imóveis de forma prática e visual",
-        "Explorar diferentes estilos de arquitetura e interiores",
-        "Ter uma experiência digital elegante e confiável"
-      ],
-      painPoints: [
-        "Muitos sites imobiliários são poluídos visualmente",
-        "Falta organização entre inspiração e informação objetiva",
-        "Interfaces genéricas reduzem a confiança na marca"
-      ],
-      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
-    },
-    research: {
-      methods: [
-        "Benchmark de landing pages imobiliárias e de arquitetura",
-        "Análise de referências visuais com proposta premium",
-        "Estudo de hierarquia visual para páginas longas",
-        "Exploração de padrões de cards para exibição de imóveis"
-      ],
-      insights: [
-        "Usuários valorizam imagens de destaque logo no primeiro contato com a página",
-        "Prova social e números institucionais ajudam a transmitir credibilidade",
-        "Cards com imagem, localização e preço facilitam a escaneabilidade",
-        "Seções inspiracionais ajudam a tornar a experiência mais aspiracional e memorável"
-      ]
-    },
-    wireframes: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-    ],
-    finalDesigns: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&h=600&fit=crop"
-    ],
-    decisions: [
-      {
-        title: "Hero com foco em impacto visual",
-        description: "A primeira dobra foi construída para combinar uma mensagem clara com uma imagem de alto impacto, criando uma entrada forte e aspiracional para a experiência."
-      },
-      {
-        title: "Cards modulares para imóveis",
-        description: "Os imóveis foram organizados em cards que combinam imagem, nome, localização, descrição e preço, facilitando a leitura rápida e mantendo consistência visual."
-      },
-      {
-        title: "Seção inspiracional de estilos",
-        description: "Além de apresentar propriedades, foi criada uma seção com estilos de espaços para ampliar o apelo emocional da interface e reforçar o posicionamento da marca."
-      },
-            {
-        title: "Equipe para reforço de credibilidade",
-        description: "A apresentação dos profissionais foi incluída para humanizar a marca e transmitir confiança ao usuário."
-      },
-            {
-        title: "Paleta neutra com contraste premium",
-        description: "A escolha de tons claros, preto e um bloco de destaque suave no hero ajudou a construir uma estética elegante, limpa e contemporânea."
-      }
-    ]
-  },
-  {
-    id: "health-dashboard",
+    id: "starbucks",
     title: "Starbucks App",
-    subtitle: "Aplicativo de vendas de bebidas",
-    category: "Aplicativo",
+    subtitle: "Experiência de pedido e fidelidade",
+    category: "Mobile App",
     thumbnail: "/capa_star.png",
-    overview: "Landing page criada para uma marca fictícia do setor imobiliário e de arquitetura, com foco em apresentar imóveis e estilos de ambientes de forma sofisticada, clara e visualmente atrativa.",
-    problem: "Muitas plataformas do setor imobiliário apresentam excesso de informação, navegação pouco atraente e uma comunicação visual genérica, o que dificulta a exploração dos imóveis e reduz a percepção de valor da marca.",
-    context: "Este projeto foi desenvolvido como um exercício conceitual de UI Design com o objetivo de praticar hierarquia visual, organização de conteúdo, construção de identidade visual e criação de uma interface digital com aparência premium para o segmento de real estate.",
+    overview: "Redesign conceitual do aplicativo Starbucks, focando em simplificar o processo de customização de bebidas e integrar o programa de fidelidade de forma mais fluida.",
+    problem: "O processo de customização atual é complexo e muitas vezes resulta em erros no pedido final.",
+    context: "Projeto de 6 semanas focado em micro-interações e design emocional para reforçar a identidade da marca no ambiente digital.",
     persona: {
-      name: "Marina Costa",
-      age: 32,
-      occupation: "Arquiteta",
+      name: "Beatriz Santos",
+      age: 24,
+      occupation: "Estudante de Design",
       goals: [
-        "Encontrar imóveis de forma prática e visual",
-        "Explorar diferentes estilos de arquitetura e interiores",
-        "Ter uma experiência digital elegante e confiável"
+        "Pedir café rapidamente entre as aulas",
+        "Customizar suas bebidas favoritas",
+        "Acumular estrelas facilmente"
       ],
       painPoints: [
-        "Muitos sites imobiliários são poluídos visualmente",
-        "Falta organização entre inspiração e informação objetiva",
-        "Interfaces genéricas reduzem a confiança na marca"
+        "Interface confusa para adicionar extras",
+        "Demora na atualização do saldo de pontos",
+        "Dificuldade em encontrar lojas próximas"
       ],
-      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
+      quote: "Eu adoro meu café do meu jeito, mas o app atual dificulta muito isso."
     },
     research: {
       methods: [
-        "Benchmark de landing pages imobiliárias e de arquitetura",
-        "Análise de referências visuais com proposta premium",
-        "Estudo de hierarquia visual para páginas longas",
-        "Exploração de padrões de cards para exibição de imóveis"
+        "Observação direta em lojas",
+        "Teste de guerrilha com usuários do app atual",
+        "Mapeamento da jornada do usuário"
       ],
       insights: [
-        "Usuários valorizam imagens de destaque logo no primeiro contato com a página",
-        "Prova social e números institucionais ajudam a transmitir credibilidade",
-        "Cards com imagem, localização e preço facilitam a escaneabilidade",
-        "Seções inspiracionais ajudam a tornar a experiência mais aspiracional e memorável"
+        "Visualização dos ingredientes em camadas ajuda na compreensão da customização",
+        "Feedback visual imediato ao adicionar itens aumenta a confiança",
+        "Acesso rápido aos pedidos recentes é a funcionalidade mais usada"
       ]
     },
     wireframes: [
-      "/capa_star.png",
-      "/tela_home.png"
+      "/login_starbucks.png"
     ],
     finalDesigns: [
-       "/login_starbucks.png",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&h=600&fit=crop"
+      "/mockup_star1.png",
+      "/mockup_star2.png",
+      "/mockup_star3.png"
     ],
     decisions: [
       {
-        title: "Hero com foco em impacto visual",
-        description: "A primeira dobra foi construída para combinar uma mensagem clara com uma imagem de alto impacto, criando uma entrada forte e aspiracional para a experiência."
+        title: "Interface baseada em cartões",
+        description: "Utilizamos cards para representar os itens do menu, facilitando a navegação com uma mão."
       },
       {
-        title: "Cards modulares para imóveis",
-        description: "Os imóveis foram organizados em cards que combinam imagem, nome, localização, descrição e preço, facilitando a leitura rápida e mantendo consistência visual."
-      },
+        title: "Feedback tátil e visual",
+        description: "Implementamos animações suaves e haptics para confirmar ações de customização, tornando o app mais 'vivo'."
+      }
+    ]
+  },
+  {
+    id: "woofle",
+    title: "Woofle",
+    subtitle: "Plataforma para donos de pets",
+    category: "Mobile App",
+    thumbnail: "/87fa987315d8690e819d048f8b964dcc.webp",
+    overview: "Woofle conecta donos de animais de estimação a serviços locais como pet shops, veterinários e dog walkers, além de oferecer uma rede social para a comunidade pet.",
+    problem: "Donos de pets gastam muito tempo procurando serviços confiáveis e gerindo a agenda de saúde de seus animais em diferentes lugares.",
+    context: "Criado para unificar a experiência de cuidado animal, facilitando o agendamento e o compartilhamento de experiências entre tutores.",
+    persona: {
+      name: "Juliana Lima",
+      age: 30,
+      occupation: "Veterinária",
+      goals: [
+        "Encontrar passeadores confiáveis para seu cão",
+        "Organizar o histórico de vacinas",
+        "Conhecer outros donos de Golden Retrievers"
+      ],
+      painPoints: [
+        "Falta de reviews confiáveis de serviços",
+        "Esquece datas de vermifugação",
+        "Sente falta de uma comunidade local"
+      ],
+      quote: "Meu cachorro é parte da família, quero o melhor para ele com o mínimo de complicação."
+    },
+    research: {
+      methods: [
+        "Entrevistas com 30 tutores de pets",
+        "Análise de mercado de pet tech",
+        "Prototipagem rápida"
+      ],
+      insights: [
+        "Segurança e confiança são os fatores decisivos na escolha de serviços",
+        "Lembretes push são muito valorizados para saúde preventiva",
+        "Fotos e vídeos são fundamentais na rede social pet"
+      ]
+    },
+    wireframes: [
+      "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&h=600&fit=crop"
+    ],
+    finalDesigns: [
+      "/87fa987315d8690e819d048f8b964dcc.webp",
+      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=600&fit=crop"
+    ],
+    decisions: [
       {
-        title: "Seção inspiracional de estilos",
-        description: "Além de apresentar propriedades, foi criada uma seção com estilos de espaços para ampliar o apelo emocional da interface e reforçar o posicionamento da marca."
-      },
-            {
-        title: "Equipe para reforço de credibilidade",
-        description: "A apresentação dos profissionais foi incluída para humanizar a marca e transmitir confiança ao usuário."
-      },
-            {
-        title: "Paleta neutra com contraste premium",
-        description: "A escolha de tons claros, preto e um bloco de destaque suave no hero ajudou a construir uma estética elegante, limpa e contemporânea."
+        title: "Perfil do Pet centralizado",
+        description: "Toda a navegação gira em torno do perfil do animal, facilitando o acesso rápido a informações de saúde e serviços."
+      }
+    ]
+  },
+  {
+    id: "bookclub",
+    title: "BookClub",
+    subtitle: "Comunidade para leitores vorazes",
+    category: "Web Platform",
+    thumbnail: "/placeholder.svg",
+    overview: "Uma plataforma para organizar clubes de leitura, discutir livros em capítulos e acompanhar o progresso de leitura de forma social.",
+    problem: "Clubes de leitura presenciais são difíceis de organizar e plataformas online existentes são datadas ou pouco focadas na discussão profunda.",
+    context: "Foco em criar uma experiência de discussão assíncrona que respeite o ritmo de cada leitor.",
+    persona: {
+      name: "Felipe Mendes",
+      age: 22,
+      occupation: "Estudante de Letras",
+      goals: [
+        "Participar de discussões literárias profundas",
+        "Organizar suas leituras do ano",
+        "Encontrar pessoas com gostos similares"
+      ],
+      painPoints: [
+        "Spoilers em redes sociais",
+        "Dificuldade em encontrar grupos de nicho",
+        "Interface confusa em apps de leitura"
+      ],
+      quote: "Ler é solitário, mas discutir o que lemos é o que torna tudo especial."
+    },
+    research: {
+      methods: [
+        "Benchmark de plataformas como Goodreads e Skoob",
+        "Sessões de co-criação com leitores",
+        "User journey mapping"
+      ],
+      insights: [
+        "Controle de spoiler por capítulo é a funcionalidade mais desejada",
+        "Gamificação leve incentiva o hábito de leitura",
+        "Interface limpa reduz a fadiga visual durante a leitura de comentários"
+      ]
+    },
+    wireframes: [
+      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop"
+    ],
+    finalDesigns: [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=600&fit=crop"
+    ],
+    decisions: [
+      {
+        title: "Sistema anti-spoiler",
+        description: "Implementamos um sistema onde comentários são escondidos baseado no progresso de leitura do usuário."
       }
     ]
   }
