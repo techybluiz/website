@@ -5,24 +5,31 @@ interface ProjectDecisionsProps {
 }
 
 export function ProjectDecisions({ project }: ProjectDecisionsProps) {
+  if (!project.decisions || project.decisions.length === 0) return null
+
   return (
-    <section className="py-20 px-6 bg-foreground text-background">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-sm text-background/60 uppercase tracking-wider mb-12">
-          Decisões de Design
-        </h2>
+    <section className="py-24 md:py-32 px-6 border-t border-border">
+      <div className="max-w-7xl mx-auto">
+        <div className="max-w-3xl mb-16 md:mb-24">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-[0.2em] mb-4">
+            Decisões de Design
+          </h2>
+          <p className="text-3xl md:text-4xl font-serif text-foreground leading-tight">
+            Cada detalhe foi pensado para equilibrar estética e funcionalidade.
+          </p>
+        </div>
         
-        <div className="space-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {project.decisions.map((decision, index) => (
-            <div key={index} className="flex gap-8">
-              <span className="text-4xl font-serif text-background/30">
+            <div key={index} className="group flex gap-8 p-8 hover:bg-muted/30 transition-colors">
+              <span className="text-5xl font-serif font-light text-muted-foreground/20 group-hover:text-foreground/10 transition-colors">
                 {String(index + 1).padStart(2, '0')}
               </span>
-              <div>
-                <h3 className="text-xl font-medium text-background mb-3">
+              <div className="space-y-3">
+                <h3 className="text-xl font-medium text-foreground tracking-tight">
                   {decision.title}
                 </h3>
-                <p className="text-background/80 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed font-light">
                   {decision.description}
                 </p>
               </div>

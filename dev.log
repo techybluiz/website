@@ -1,0 +1,34 @@
+
+> my-project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.255.255.254:3000
+
+✓ Starting...
+✓ Ready in 298ms
+ GET / 200 in 2.9s (compile: 2.7s, render: 185ms)
+ GET / 200 in 87ms (compile: 48ms, render: 39ms)
+ GET / 200 in 344ms (compile: 315ms, render: 29ms)
+ GET / 200 in 107ms (compile: 2ms, render: 105ms)
+ GET /projeto/archiplace 200 in 738ms (compile: 679ms, generate-params: 339ms, render: 59ms)
+ GET /projeto/archiplace 200 in 92ms (compile: 45ms, generate-params: 9ms, render: 47ms)
+ GET /projeto/archiplace 200 in 79ms (compile: 32ms, generate-params: 9ms, render: 48ms)
+ GET /projeto/archiplace 200 in 221ms (compile: 11ms, generate-params: 8ms, render: 210ms)
+ GET /projeto/archiplace 200 in 396ms (compile: 336ms, generate-params: 9ms, render: 60ms)
+ GET /projeto/archiplace 200 in 120ms (compile: 33ms, generate-params: 10ms, render: 88ms)
+ GET /projeto/archiplace 200 in 41ms (compile: 2ms, generate-params: 20µs, render: 38ms)
+ GET /projeto/archiplace 200 in 85ms (compile: 34ms, generate-params: 8ms, render: 51ms)
+ GET /projeto/archiplace 200 in 96ms (compile: 44ms, generate-params: 7ms, render: 52ms)
+ GET /projeto/archiplace 200 in 64ms (compile: 29ms, generate-params: 9ms, render: 35ms)
+ GET /projeto/archiplace 200 in 84ms (compile: 33ms, generate-params: 9ms, render: 51ms)
+ GET /projeto/archiplace 200 in 245ms (compile: 13ms, generate-params: 9ms, render: 232ms)
+ GET /projeto/archiplace 200 in 107ms (compile: 17ms, generate-params: 12ms, render: 90ms)
+ GET /projeto/archiplace 200 in 78ms (compile: 36ms, generate-params: 8ms, render: 42ms)
+ GET / 200 in 189ms (compile: 51ms, render: 139ms)
+ GET /projeto/archiplace 200 in 88ms (compile: 27ms, generate-params: 17ms, render: 60ms)
+ GET /projeto/newsflow 200 in 87ms (compile: 16ms, generate-params: 12ms, render: 72ms)
+ GET /projeto/newsflow 200 in 44ms (compile: 11ms, generate-params: 8ms, render: 33ms)
+ GET / 200 in 27ms (compile: 6ms, render: 22ms)
+ GET / 200 in 20ms (compile: 2ms, render: 18ms)
