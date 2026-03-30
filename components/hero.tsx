@@ -1,40 +1,64 @@
 export function Hero() {
   return (
-   <section className="pt-32 pb-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+   <section className="pt-48 pb-32 px-6 bg-background overflow-hidden">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
-        {/* Texto */}
-        <div>
-          <p className="text-muted-foreground mb-4">
-            Olá, bem-vindo(a)
+        {/* Text Content */}
+        <div className="space-y-10 animate-in fade-in slide-in-from-left-8 duration-1000">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-8 h-px bg-foreground/20" />
+              <p className="text-xs font-bold uppercase tracking-[0.4em] text-muted-foreground">
+                Product Designer & UX Strategist
+              </p>
+            </div>
+
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light leading-[0.95] text-foreground tracking-tighter">
+              Transformando <br />
+              <span className="italic text-muted-foreground/60">complexidade</span> <br />
+              em clareza.
+            </h1>
+          </div>
+
+          <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed max-w-xl border-l-2 border-foreground/10 pl-8">
+            Especialista em criar produtos digitais que equilibram 
+            <strong className="font-medium text-foreground"> funcionalidade impecável</strong> com 
+            <strong className="font-medium text-foreground"> estética refinada</strong>. 
+            Foco em design centrado no humano e resultados mensuráveis.
           </p>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-foreground">
-            Transformo problemas complexos em experiências digitais simples e funcionais.
-          </h1>
-
-          <p className="mt-6 text-muted-foreground">
-            Sou uma <strong className="font-semibold">designer</strong> focada em criar produtos 
-            digitais intuitivos e centrados no usuário. Tenho interesse em resolver problemas 
-            reais através de pesquisa, estruturação de informações e design de{" "}
-            <strong className="font-semibold">interfaces claras</strong>.
-          </p>
-
-          <div className="mt-8">
+          <div className="flex flex-wrap items-center gap-8 pt-4">
             <a 
               href="#projetos"
-              className="inline-flex items-center gap-2 px-5 py-2.5 border border-foreground text-foreground text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
+              className="group relative inline-flex items-center gap-4 px-8 py-4 bg-foreground text-background text-sm font-bold uppercase tracking-widest rounded-full hover:scale-105 transition-all duration-300"
             >
-              Ver projetos
+              Ver Projetos Selecionados
+              <div className="w-2 h-2 rounded-full bg-background group-hover:scale-150 transition-transform" />
+            </a>
+            <a 
+              href="#contato"
+              className="text-sm font-bold uppercase tracking-widest text-foreground hover:text-muted-foreground transition-colors border-b-2 border-foreground/10 pb-1"
+            >
+              Vamos conversar?
             </a>
           </div>
         </div>
 
-        <div className="flex justify-center">
-        <img
-          src="/designer.png"
-          className="w-100"
-        />
+        {/* Visual Content */}
+        <div className="relative flex justify-center animate-in fade-in zoom-in-95 duration-1000 delay-300">
+          <div className="relative w-full aspect-square max-w-[500px]">
+            <div className="absolute inset-0 bg-secondary rounded-[4rem] rotate-6 scale-95 opacity-50" />
+            <div className="absolute inset-0 bg-secondary/30 rounded-[4rem] -rotate-3 scale-100" />
+            <img
+              src="/designer.png"
+              alt="Designer Profile"
+              className="relative z-10 w-full h-full object-contain drop-shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000"
+            />
+          </div>
+          
+          {/* Decorative elements */}
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-foreground/5 rounded-full blur-3xl" />
+          <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-foreground/5 rounded-full blur-3xl" />
         </div>
       </div>
     </section>

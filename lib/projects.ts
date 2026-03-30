@@ -21,6 +21,11 @@ export interface Project {
   }
   wireframes: string[]
   finalDesigns: string[]
+  sections?: {
+    title: string
+    description: string
+    images: string[]
+  }[]
   decisions: {
     title: string
     description: string
@@ -162,62 +167,104 @@ export const projects: Project[] = [
   {
     id: "newsflow",
     title: "NewsFlow",
-    subtitle: "Agregador de notícias inteligente",
+    subtitle: "Agregador de notícias inteligente e focado em bem-estar",
     category: "Mobile App",
-    thumbnail: "/newsflow/homepage.png",
-    overview: "NewsFlow é uma plataforma que centraliza notícias de diversas fontes e utiliza IA para filtrar conteúdo irrelevante, entregando apenas o que importa para o usuário.",
-    problem: "O excesso de informação e a disseminação de fake news dificultam o acompanhamento de notícias relevantes e confiáveis no dia a dia.",
-    context: "Desenvolvido como um projeto pessoal para explorar integração de APIs de notícias e algoritmos de recomendação, com foco em uma interface limpa e focada na leitura.",
+    thumbnail: "/newsflow/home.png",
+    overview: "O NewsFlow é um agregador de notícias de próxima geração, projetado para combater a sobrecarga de informações e o 'doomscrolling'. Ele oferece uma experiência de leitura personalizada, focada em curadoria inteligente e comunidades de nicho, permitindo que os usuários se mantenham informados sem sacrificar o bem-estar mental.",
+    problem: "Em um mundo saturado de informações, os leitores enfrentam dois grandes desafios: o excesso de conteúdo irrelevante (ruído) e a falta de fontes confiáveis centralizadas. Aplicativos atuais muitas vezes priorizam o engajamento através de clickbaits, resultando em uma experiência de leitura fragmentada e cansativa.",
+    context: "O projeto surgiu da necessidade de criar um espaço digital onde o consumo de notícias fosse intencional. Ao longo de 8 semanas, desenvolvemos o NewsFlow focando em três pilares: curadoria via IA, design minimalista para leitura profunda e integração de comunidades para discussões saudáveis.",
     persona: {
       name: "Ricardo Oliveira",
       age: 45,
-      occupation: "Jornalista",
+      occupation: "Jornalista e Curador",
       goals: [
-        "Acompanhar tendências em tempo real",
-        "Filtrar ruído de redes sociais",
-        "Ter uma fonte centralizada e confiável"
+        "Filtrar o ruído das redes sociais para encontrar fatos puros",
+        "Acompanhar tendências de nicho sem ser bombardeado por anúncios",
+        "Ter um espaço para discutir notícias complexas com outros especialistas"
       ],
       painPoints: [
-        "Muitos anúncios intrusivos em sites de notícias",
-        "Dificuldade em encontrar opiniões divergentes",
-        "Falta de tempo para ler artigos longos"
+        "Anúncios intrusivos que quebram o fluxo de leitura",
+        "Dificuldade em validar a credibilidade de fontes rápidas",
+        "Fadiga visual causada por interfaces excessivamente complexas"
       ],
-      quote: "Eu preciso de fatos, não de clickbait."
+      quote: "Eu preciso de fatos reais e contexto, não de manchetes sensacionalistas feitas para o algoritmo."
     },
     research: {
       methods: [
-        "Questionário online com 100 leitores",
-        "Análise de padrões de leitura em dispositivos móveis",
-        "Estudo de legibilidade e tipografia"
+        "Questionários quantitativos com 100 usuários frequentes",
+        "Entrevistas em profundidade com curadores de conteúdo",
+        "Benchmarking competitivo com apps como Feedly e Pocket",
+        "Testes de usabilidade com protótipos de alta fidelidade"
       ],
       insights: [
-        "Modo escuro é preferido por 70% dos leitores noturnos",
-        "Sumários gerados por IA aumentam a retenção de informação",
-        "A possibilidade de salvar para ler depois é essencial"
+        "72% dos usuários sentem-se ansiosos com excesso de notificações",
+        "A legibilidade (tipografia e espaçamento) é vital para a retenção",
+        "Comunidades moderadas aumentam o tempo de qualidade no app",
+        "Sumários rápidos facilitam a decisão de leitura profunda"
       ]
     },
     wireframes: [
       "/newsflow/login.png",
-      "/newsflow/register.png"
+      "/newsflow/register.png",
+      "/newsflow/Comunidades - config.png"
     ],
     finalDesigns: [
-      "/newsflow/onboarding1.png",
-      "/newsflow/onboarding2.png",
-      "/newsflow/onboarding3.png",
-      "/newsflow/onboarding4.png",
+      "/newsflow/home.png",
+      "/newsflow/page2-categories.png",
+      "/newsflow/page3-save.png",
       "/newsflow/comunity.png",
       "/newsflow/chat_comunity.png",
-      "/newsflow/profile_settings.png",
-      "/newsflow/itens_save.png"
+      "/newsflow/profile_settings.png"
+    ],
+    sections: [
+      {
+        title: "Onboarding & Personalização",
+        description: "Uma jornada fluida para entender os interesses do usuário e configurar o algoritmo de curadoria desde o primeiro contato.",
+        images: [
+          "/newsflow/onboarding1.png",
+          "/newsflow/onboarding2.png",
+          "/newsflow/onboarding3.png",
+          "/newsflow/onboarding4.png"
+        ]
+      },
+      {
+        title: "Feed de Notícias & Artigos",
+        description: "Interface limpa focada na legibilidade, com sumários inteligentes e sistema de salvamento para leitura posterior.",
+        images: [
+          "/newsflow/home.png",
+          "/newsflow/page2-categories.png",
+          "/newsflow/page3-save.png"
+        ]
+      },
+      {
+        title: "Comunidades & Discussões",
+        description: "Espaços moderados onde usuários podem discutir temas específicos, compartilhar visões e aprofundar conhecimentos.",
+        images: [
+          "/newsflow/comunity.png",
+          "/newsflow/chat_comunity.png",
+          "/newsflow/comunity_2.png",
+          "/newsflow/comunity_3.png",
+          "/newsflow/comunity_4.png",
+          "/newsflow/members_chat_comunity.png"
+        ]
+      }
     ],
     decisions: [
       {
-        title: "Foco na tipografia",
-        description: "Escolhemos fontes serifadas para o corpo do texto para facilitar a leitura prolongada, semelhante a jornais impressos."
+        title: "Foco na Leitura Limpa",
+        description: "Interface sem anúncios intrusivos, com tipografia otimizada para longos períodos de leitura, reduzindo a fadiga visual."
       },
       {
-        title: "Sistema de etiquetas dinâmicas",
-        description: "Implementamos um sistema de tags que agrupa notícias por contexto, não apenas por categorias genéricas."
+        title: "Curadoria por Comunidades",
+        description: "Em vez de apenas algoritmos, o app permite que especialistas criem 'fluxos' de notícias curados, humanizando a descoberta."
+      },
+      {
+        title: "Sumários Inteligentes",
+        description: "Implementação de resumos para leitura rápida, permitindo que o usuário decida se quer aprofundar no artigo original."
+      },
+      {
+        title: "Espaços de Discussão Saudável",
+        description: "Comunidades dedicadas com chat e moderação ativa para evitar polarização tóxica e incentivar o debate de ideias."
       }
     ]
   },
