@@ -142,7 +142,30 @@ export const projects: Project[] = [
       "/volare/wireframe_volare.png"
     ],
     finalDesigns: [
-      "/volare/mockup_volare.webp"
+      "/volare/home_desktop.png",
+      "/volare/home_mobile.png",
+      "/volare/services_desktop.png",
+      "/volare/about_volare_desktop.png",
+      "/volare/footer_desktop.png"
+    ],
+    sections: [
+      {
+        title: "Experiência Desktop",
+        description: "Layout adaptado para telas grandes, com foco em clareza de informações e fluxos de navegação intuitivos.",
+        images: [
+          "/volare/home_desktop.png",
+          "/volare/services_desktop.png",
+          "/volare/about_volare_desktop.png",
+          "/volare/footer_desktop.png"
+        ]
+      },
+      {
+        title: "Mobile First",
+        description: "Priorização da experiência móvel para usuários que buscam passagens de forma rápida e prática.",
+        images: [
+          "/volare/home_mobile.png"
+        ]
+      }
     ],
     decisions: [
       {
@@ -205,12 +228,12 @@ export const projects: Project[] = [
       "/newsflow/page3.png",
       "/newsflow/comunity1.png",
       "/newsflow/chat_comunity.png",
-      "/newsflow/profile_settings.png"
+      "/newsflow/profile.png"
     ],
     sections: [
       {
-        title: "Interface de Leitura",
-        description: "Foco total na legibilidade e na ausência de distrações.",
+        title: "Artigos & Leitura",
+        description: "Foco total na legibilidade e na ausência de distrações visuais.",
         images: [
           "/newsflow/home.png",
           "/newsflow/page2.png",
@@ -219,15 +242,21 @@ export const projects: Project[] = [
         ]
       },
       {
-        title: "Espaços de Comunidade",
-        description: "Discussões moderadas e focadas em temas específicos.",
+        title: "Comunidades",
+        description: "Espaços moderados para discussão de temas específicos.",
         images: [
           "/newsflow/comunity1.png",
           "/newsflow/comunity2.png",
           "/newsflow/comunity3.png",
           "/newsflow/comunity4.png",
-          "/newsflow/chat_comunity.png",
-          "/newsflow/members_chat_comunity.png"
+          "/newsflow/chat_comunity.png"
+        ]
+      },
+      {
+        title: "Perfil & Configurações",
+        description: "Interface intuitiva para gerenciar preferências de leitura e bem-estar.",
+        images: [
+          "/newsflow/profile.png"
         ]
       }
     ],
@@ -285,11 +314,42 @@ export const projects: Project[] = [
       "/Starbucks/login_starbucks.png"
     ],
     finalDesigns: [
-      "/Starbucks/mockup_star1.png",
-      "/Starbucks/mockup_star2.png",
-      "/Starbucks/mockup_star3.png",
       "/Starbucks/home.png",
-      "/Starbucks/drinks.png"
+      "/Starbucks/drinks.png",
+      "/Starbucks/profile.png",
+      "/Starbucks/checkout.png",
+      "/Starbucks/location.png"
+    ],
+    sections: [
+      {
+        title: "Bebidas & Customização",
+        description: "Visualização direta dos ingredientes e opções de customização para cada bebida.",
+        images: [
+          "/Starbucks/drinks.png",
+          "/Starbucks/drick_maple_1.png",
+          "/Starbucks/drick_maple_2.png",
+          "/Starbucks/drink_choco1.png",
+          "/Starbucks/drink_choco2.png",
+          "/Starbucks/drink_strawberry1.png",
+          "/Starbucks/drink_strawberry2.png"
+        ]
+      },
+      {
+        title: "Checkout & Localização",
+        description: "Fluxo de pagamento simplificado e integração com GPS para encontrar lojas próximas.",
+        images: [
+          "/Starbucks/checkout.png",
+          "/Starbucks/location.png",
+          "/Starbucks/search_location.png"
+        ]
+      },
+      {
+        title: "Perfil & Fidelidade",
+        description: "Gestão de pontos e recompensas de forma clara e acessível.",
+        images: [
+          "/Starbucks/profile.png"
+        ]
+      }
     ],
     decisions: [
       {
@@ -347,7 +407,7 @@ export const projects: Project[] = [
     decisions: [
       {
         title: "Identidade Visual Lúdica",
-        description: "Uso de elementos orgânicos para criar uma conexão emocional com o tema."
+        description: "Uso de elements orgânicos para criar uma conexão emocional com o tema."
       }
     ]
   }
