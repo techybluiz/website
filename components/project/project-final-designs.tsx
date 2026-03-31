@@ -97,7 +97,9 @@ export function ProjectFinalDesigns({ project }: ProjectFinalDesignsProps) {
                     {section.description}
                   </p>
                 </div>
-                {isMobileApp ? renderMobileScreens(section.images) : renderWebScreens(section.images)}
+                {section.layout === "mobile" ? renderMobileScreens(section.images) : 
+                 section.layout === "web" ? renderWebScreens(section.images) :
+                 isMobileApp ? renderMobileScreens(section.images) : renderWebScreens(section.images)}
               </div>
             ))}
           </div>

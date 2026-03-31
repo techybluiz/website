@@ -8,6 +8,7 @@ export interface Project {
   problem: string
   context: string
   duration: string
+  year: string
   persona: {
     name: string
     age: number
@@ -27,6 +28,7 @@ export interface Project {
     title: string
     description: string
     images: string[]
+    layout?: "mobile" | "web"
   }[]
   decisions: {
     title: string
@@ -42,6 +44,7 @@ export const projects: Project[] = [
     category: "Landing Page",
     thumbnail: "/ArchiPlace/home_archiPlace.png",
     duration: "2 Semanas",
+    year: "2025",
     overview: "O ArchiPlace é um estudo de interface focado em real estate e arquitetura. O objetivo foi criar uma landing page que transmita sofisticação e clareza, facilitando a navegação de usuários que buscam imóveis de alto padrão.",
     problem: "Plataformas imobiliárias costumam ser visualmente poluídas, dificultando a visualização rápida das propriedades e gerando uma experiência de busca cansativa.",
     context: "Este projeto foi desenvolvido individualmente como um exercício prático de UI Design para o meu portfólio, focando em hierarquia visual, tipografia e composição de grids para o mercado imobiliário.",
@@ -103,6 +106,7 @@ export const projects: Project[] = [
     category: "UX/UI Design",
     thumbnail: "/volare/capa.webp",
     duration: "4 Semanas",
+    year: "2024",
     overview: "A Volare é um conceito de plataforma digital projetado para simplificar a busca e compra de passagens aéreas, priorizando a transparência e a facilidade de uso.",
     problem: "Reservar passagens aéreas frequentemente envolve lidar com interfaces poluídas e fluxos de compra cansativos. O excesso de informações irrelevantes, taxas que surgem apenas no checkout e a falta de clareza nos preços geram desconfiança e fadiga visual no usuário.",
     context: "Este é um projeto conceitual desenvolvido individualmente para fins de estudo e aprimoramento em UX/UI Design. O objetivo foi explorar soluções visuais que priorizem a transparência e a fluidez, removendo barreiras cognitivas comuns em plataformas de reserva de voos.",
@@ -121,7 +125,7 @@ export const projects: Project[] = [
         "Interface confusa em dispositivos móveis"
       ],
       quote: "Eu viajo com frequência a trabalho e só quero um processo honesto, sem truques ou passos desnecessários.",
-      image: "/placeholder-user.jpg"
+      image: "/Personas/persona_volare.jpg"
     },
     research: {
       methods: [
@@ -152,6 +156,7 @@ export const projects: Project[] = [
       {
         title: "Experiência Desktop",
         description: "Layout adaptado para telas grandes, com foco em clareza de informações e fluxos de navegação intuitivos.",
+        layout: "web",
         images: [
           "/volare/home_desktop.png",
           "/volare/services_desktop.png",
@@ -162,6 +167,7 @@ export const projects: Project[] = [
       {
         title: "Mobile First",
         description: "Priorização da experiência móvel para usuários que buscam passagens de forma rápida e prática.",
+        layout: "mobile",
         images: [
           "/volare/home_mobile.png"
         ]
@@ -184,7 +190,8 @@ export const projects: Project[] = [
     subtitle: "Agregador de notícias focado em bem-estar",
     category: "Mobile App",
     thumbnail: "/newsflow/home.png",
-    duration: "5 Semanas",
+    duration: "8 semanas",
+    year: "2026",
     overview: "O NewsFlow é um estudo de aplicativo voltado para o consumo intencional de notícias, combatendo a sobrecarga de informações através de uma interface calma e curadoria inteligente.",
     problem: "O excesso de notificações e o design focado em atenção (doomscrolling) tornam o consumo de notícias um processo ansioso e fragmentado.",
     context: "Projeto desenvolvido individualmente como parte dos meus estudos de Product Design, explorando como o design pode auxiliar no bem-estar digital e na leitura profunda.",
@@ -232,8 +239,9 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        title: "Artigos & Leitura",
+        title: "Interface de Leitura",
         description: "Foco total na legibilidade e na ausência de distrações visuais.",
+        layout: "mobile",
         images: [
           "/newsflow/home.png",
           "/newsflow/page2.png",
@@ -244,6 +252,7 @@ export const projects: Project[] = [
       {
         title: "Comunidades",
         description: "Espaços moderados para discussão de temas específicos.",
+        layout: "mobile",
         images: [
           "/newsflow/comunity1.png",
           "/newsflow/comunity2.png",
@@ -255,6 +264,7 @@ export const projects: Project[] = [
       {
         title: "Perfil & Configurações",
         description: "Interface intuitiva para gerenciar preferências de leitura e bem-estar.",
+        layout: "mobile",
         images: [
           "/newsflow/profile.png"
         ]
@@ -276,8 +286,9 @@ export const projects: Project[] = [
     title: "Starbucks App",
     subtitle: "Estudo de customização e fidelidade",
     category: "Mobile App",
-    thumbnail: "/Starbucks/capa_star.png",
+    thumbnail: "/Starbucks/all_mockup.png",
     duration: "3 Semanas",
+    year: "2026",
     overview: "Redesign conceitual do fluxo de pedidos do Starbucks, focado em tornar a customização de bebidas mais visual e intuitiva.",
     problem: "A customização de bebidas no app atual pode ser complexa devido ao excesso de opções apresentadas apenas em listas de texto.",
     context: "Projeto individual de estudo para praticar micro-interações e design visual aplicado a uma interface de alta complexidade de opções.",
@@ -311,21 +322,24 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/Starbucks/login_starbucks.png"
+      "/Starbucks/Login.png",
+      "/Starbucks/Register.png",
+      "/Starbucks/splashscreen.png"
     ],
     finalDesigns: [
-      "/Starbucks/home.png",
-      "/Starbucks/drinks.png",
-      "/Starbucks/profile.png",
-      "/Starbucks/checkout.png",
-      "/Starbucks/location.png"
+      "/Starbucks/Home.png",
+      "/Starbucks/all_mockup.png",
+      "/Starbucks/mockup_star1.png",
+      "/Starbucks/mockup_star2.png",
+      "/Starbucks/mockup_star3.png"
     ],
     sections: [
       {
         title: "Bebidas & Customização",
         description: "Visualização direta dos ingredientes e opções de customização para cada bebida.",
+        layout: "mobile",
         images: [
-          "/Starbucks/drinks.png",
+          "/Starbucks/Home.png",
           "/Starbucks/drick_maple_1.png",
           "/Starbucks/drick_maple_2.png",
           "/Starbucks/drink_choco1.png",
@@ -335,18 +349,21 @@ export const projects: Project[] = [
         ]
       },
       {
-        title: "Checkout & Localização",
-        description: "Fluxo de pagamento simplificado e integração com GPS para encontrar lojas próximas.",
+        title: "Fluxo de Pedido",
+        description: "Interface intuitiva para seleção, customização e finalização do pedido.",
+        layout: "mobile",
         images: [
-          "/Starbucks/checkout.png",
+          "/Starbucks/search_location.png",
           "/Starbucks/location.png",
-          "/Starbucks/search_location.png"
+          "/Starbucks/checkout.png"
         ]
       },
       {
-        title: "Perfil & Fidelidade",
+        title: "Fidelidade & Perfil",
         description: "Gestão de pontos e recompensas de forma clara e acessível.",
+        layout: "mobile",
         images: [
+          "/Starbucks/Loyalty.png",
           "/Starbucks/profile.png"
         ]
       }
@@ -363,8 +380,9 @@ export const projects: Project[] = [
     title: "Woofle",
     subtitle: "Plataforma conceitual para pets",
     category: "UI Design",
-    thumbnail: "/Woofle/Desktop - 1 (3).png",
+    thumbnail: "/Woofle/mockup.png",
     duration: "3 Semanas",
+    year: "2024",
     overview: "O Woofle é um projeto de interface para uma plataforma que centraliza serviços e informações para donos de animais de estimação.",
     problem: "Informações sobre cuidados e serviços pet costumam estar dispersas, dificultando a gestão da saúde do animal.",
     context: "Estudo individual focado em criar uma linguagem visual amigável e uma arquitetura de informação centralizada para o nicho pet tech.",
@@ -398,11 +416,27 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/Woofle/Group 9.png"
+      "/Woofle/typograph.png"
     ],
     finalDesigns: [
-      "/Woofle/Group 7.png",
-      "/Woofle/Frame 2.png"
+      "/Woofle/home.png",
+      "/Woofle/services.png",
+      "/Woofle/products.png",
+      "/Woofle/About.png",
+      "/Woofle/mockup.png"
+    ],
+    sections: [
+      {
+        title: "Exploração da Plataforma",
+        description: "Interfaces focadas em serviços, produtos e informações institucionais, mantendo a consistência visual.",
+        layout: "web",
+        images: [
+          "/Woofle/home.png",
+          "/Woofle/services.png",
+          "/Woofle/products.png",
+          "/Woofle/About.png"
+        ]
+      }
     ],
     decisions: [
       {

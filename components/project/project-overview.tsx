@@ -60,7 +60,7 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
                   <h3 className="text-xs font-bold text-foreground uppercase tracking-[0.3em]">
                     Ano
                   </h3>
-                  <p className="text-muted-foreground font-light text-lg">2024</p>
+                  <p className="text-muted-foreground font-light text-lg">{project.year}</p>
                 </div>
 
                 <div className="space-y-4">

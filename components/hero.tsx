@@ -21,10 +21,10 @@ export function Hero() {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed max-w-xl border-l-2 border-foreground/10 pl-8">
-            Especialista em criar produtos digitais que equilibram 
-            <strong className="font-medium text-foreground"> funcionalidade impecável</strong> com 
-            <strong className="font-medium text-foreground"> estética refinada</strong>. 
-            Foco em design centrado no humano e resultados mensuráveis.
+            Designer focado em criar soluções digitais que unem 
+            <strong className="font-medium text-foreground"> usabilidade</strong> e 
+            <strong className="font-medium text-foreground"> estética</strong>. 
+            Busco constantemente aprender e aplicar as melhores práticas de design centrado no usuário para resolver problemas reais.
           </p>
 
           <div className="flex flex-wrap items-center gap-8 pt-4">

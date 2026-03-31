@@ -15,7 +15,7 @@ export function ContactSection() {
             </p>
             
             <a 
-              href="mailto:seu@email.com"
+              href="mailto:techy.bluiz@gmail.com"
               className="inline-flex items-center gap-2 mt-8 px-5 py-2.5 bg-foreground text-background text-sm font-medium hover:bg-foreground/90 transition-colors"
             >
               Entrar em contato
@@ -26,11 +26,11 @@ export function ContactSection() {
             <div>
               <h3 className="text-sm text-muted-foreground mb-2">Email</h3>
               <a 
-                href="mailto:seu@email.com" 
+                href="mailto:techy.bluiz@gmail.com" 
                 className="text-foreground hover:text-muted-foreground transition-colors flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
-                seu@email.com
+                techy.bluiz@gmail.com
               </a>
             </div>
             
@@ -61,7 +61,7 @@ export function ContactSection() {
         </div>
         
         <div className="mt-20 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2024. Feito com cuidado.</p>
+          <p>© 2026. Feito com cuidado.</p>
           <p>Disponível para novos projetos</p>
         </div>
       </div>
