@@ -67,7 +67,7 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
                   <h3 className="text-xs font-bold text-foreground uppercase tracking-[0.3em]">
                     Duração
                   </h3>
-                  <p className="text-muted-foreground font-light text-lg">12 Semanas</p>
+                  <p className="text-muted-foreground font-light text-lg">{project.duration}</p>
                 </div>
               </div>
             </div>
