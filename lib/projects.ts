@@ -14,6 +14,7 @@ export interface Project {
     goals: string[]
     painPoints: string[]
     quote: string
+    image: string
   }
   research: {
     methods: string[]
@@ -56,7 +57,8 @@ export const projects: Project[] = [
         "Falta organização entre infrairação e informação objetiva",
         "Interfaces genéricas reduzem a confiança na marca"
       ],
-      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos."
+      quote: "Quando estou procurando um imóvel ou referência de espaço, eu quero sentir clareza, confiança e inspiração logo nos primeiros segundos.",
+      image: "/Personas/persona_archiPlace.jpg"
     },
     research: {
       methods: [
@@ -73,10 +75,11 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
-      "/ArchiPlace/wireframe_baixo.png"
+      "/ArchiPlace/wireframe_low.png",
+      "/ArchiPlace/wireframe_low2.png"
     ],
     finalDesigns: [
-      "/ArchiPlace/MacBook Air (2022).png",
+      "/ArchiPlace/mockup_archiplace.png",
       "/ArchiPlace/spaces_archiplace.png",
       "/ArchiPlace/Team_archiPlace.png",
       "/ArchiPlace/Group 3.png"
@@ -127,7 +130,8 @@ export const projects: Project[] = [
         "Fotos não mostram bem os detalhes e caimento",
         "Processo de checkout demorado"
       ],
-      quote: "Quero saber exatamente de onde vem o que estou comprando e como foi feito."
+      quote: "Quero saber exatamente de onde vem o que estou comprando e como foi feito.",
+      image: "/placeholder-user.jpg"
     },
     research: {
       methods: [
@@ -144,6 +148,9 @@ export const projects: Project[] = [
       ]
     },
     wireframes: [
+      "/volare/wireframe_mobile (1).png",
+      "/volare/wireframe_mobile (2).png",
+      "/volare/wireframe_mobile (3).png",
       "/volare/wireframe_volare.png"
     ],
     finalDesigns: [
@@ -187,7 +194,8 @@ export const projects: Project[] = [
         "Dificuldade em validar a credibilidade de fontes rápidas",
         "Fadiga visual causada por interfaces excessivamente complexas"
       ],
-      quote: "Eu preciso de fatos reais e contexto, não de manchetes sensacionalistas feitas para o algoritmo."
+      quote: "Eu preciso de fatos reais e contexto, não de manchetes sensacionalistas feitas para o algoritmo.",
+      image: "/Personas/persona_newsFlow.jpg"
     },
     research: {
       methods: [
@@ -291,7 +299,8 @@ export const projects: Project[] = [
         "Demora na atualização do saldo de pontos",
         "Dificuldade em encontrar lojas próximas"
       ],
-      quote: "Eu adoro meu café do meu jeito, mas o app atual dificulta muito isso."
+      quote: "Eu adoro meu café do meu jeito, mas o app atual dificulta muito isso.",
+      image: "/Personas/persona_starbucks.jpg"
     },
     research: {
       methods: [
@@ -346,10 +355,11 @@ export const projects: Project[] = [
       ],
       painPoints: [
         "Falta de reviews confiáveis de serviços",
-        "Esquece datas de vermifugação",
+        "Esquece das datas de vermifugação",
         "Sente falta de uma comunidade local"
       ],
-      quote: "Meu cachorro é parte da família, quero o melhor para ele com o mínimo de complicação."
+      quote: "Meu cachorro é parte da família, quero o melhor para ele com o mínimo de complicação.",
+      image: "/Personas/persona_woofle.jpg"
     },
     research: {
       methods: [

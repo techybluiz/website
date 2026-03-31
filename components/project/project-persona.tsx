@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { User, Target, AlertCircle, Quote, MapPin, Briefcase, Calendar } from "lucide-react"
 import type { Project } from "@/lib/projects"
 
@@ -28,8 +29,17 @@ export function ProjectPersona({ project }: ProjectPersonaProps) {
               
               <div className="relative z-10 space-y-8">
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-24 h-24 md:w-32 md:h-32 bg-secondary rounded-3xl flex items-center justify-center border border-border group-hover:rotate-3 transition-transform duration-500">
-                    <User className="w-12 h-12 md:w-16 md:h-16 text-foreground/20" />
+                  <div className="w-24 h-24 md:w-32 md:h-32 bg-secondary rounded-3xl flex items-center justify-center border border-border group-hover:rotate-3 transition-transform duration-500 overflow-hidden relative">
+                    {persona.image ? (
+                      <Image
+                        src={persona.image}
+                        alt={persona.name}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <User className="w-12 h-12 md:w-16 md:h-16 text-foreground/20" />
+                    )}
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-3xl font-serif font-medium text-foreground mb-2">
